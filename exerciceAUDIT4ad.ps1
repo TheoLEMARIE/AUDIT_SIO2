@@ -1,1 +1,2 @@
-﻿get-aduser -filter * >> c:\myusers.txt
+﻿Write-host "Audit utilisateurs AD"
+get-aduser -filter * >> c:\auditAD.txt
