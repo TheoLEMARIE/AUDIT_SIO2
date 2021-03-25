@@ -1,2 +1,2 @@
 ﻿Write-host "Audit utilisateurs AD"
-get-aduser -filter * >> c:\auditAD.txt
+get-aduser -filter * >> c:\auditAD-$((Get-Date).ToString('dd-MM-yyyy')).txt
