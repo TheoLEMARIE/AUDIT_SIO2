@@ -1,4 +1,16 @@
-New-Item -Path 'C:\Users\Administrateur\Desktop\test.txt' -ItemType File
+#############################
+# Author : TheoLEMARIE
+# Date : 25/03/2021
+# Vers : v2
+#############################
+
+If ((Test-Path "C:\Users\Administrateur\Desktop\test.txt") -eq $True) {
+    pass
+}
+else {
+    New-Item -Path 'C:\Users\Administrateur\Desktop\test.txt' -ItemType File
+}
+
 $date = Get-Date
 Add-Content -Path 'C:\Users\Administrateur\Desktop\test.txt' -value $date
 
